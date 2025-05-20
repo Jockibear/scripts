@@ -1,0 +1,2 @@
+Get-Mailbox -ResultSize Unlimited | Search-Mailbox -SearchQuery "kind:meetings AND Subject:'Test1' AND From:username@contoso.com" -EstimateResultOnly  
+Get-Mailbox -ResultSize Unlimited | Search-Mailbox -SearchQuery "kind:meetings AND Subject:'Test1' AND From:username@contoso.com" -DeleteContent

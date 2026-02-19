@@ -1,0 +1,1 @@
+docker run --rm --volumes-from kitchenowl_back_1 -v $(pwd):/backup ubuntu bash -c "cd /data && tar xvf /backup/backup.tar --strip 1"

